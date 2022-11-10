@@ -1,0 +1,57 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 3em;
+  background-color: black;
+  height:40vh;
+}
+
+.logo {
+  width: 30%;
+}
+
+.bunnies {
+  width: 60%;
+}
+
+.bunnies h3,
+.bunnies p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.bunnies p {
+  font-size: 14px;
+  color: #707070;
+}
+
+.contact {
+  width: 40%;
+}
+
+.contact h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  margin-block-start: 0em;
+  margin-block-end: 0.5em;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input[type="email"] {
+  background-color: var(--background-primary);
+  border: 0;
+  border-bottom: 1px solid #707070;
+  padding-bottom: 5px;
+  color: #707070;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btnSubmit{
+    margin-top: 1em;
+}

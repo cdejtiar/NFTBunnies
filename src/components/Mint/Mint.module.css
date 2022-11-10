@@ -1,0 +1,7 @@
+.mint{
+    background-image: linear-gradient(to bottom right, #8dbbed, #ca93f4, #e8a8a7);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,34 @@
+.cardTeam {
+  background-image: linear-gradient(to bottom right, #8dbbed, #ca93f4, #e8a8a7);
+  padding: 2em;
+  border-radius: 50px;
+  width: 300px;
+}
+
+.cardTeam img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.cardTeam h3{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 26px;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+}
+
+.socials a {
+  margin: 0em 1em;
+  font-size: 26px;
+  color: white;
+  transition: 0.5s;
+}
+
+.socials a:hover {
+  color:black;
+  transition-duration: 0.5s;
+}

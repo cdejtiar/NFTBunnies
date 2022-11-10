@@ -1,4 +1,4 @@
-.App.App {
+/*.App.App {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -7,6 +7,12 @@
   justify-content: center;
   font-size: 20px;
   color: white;
+}*/
+
+.App.App {
+  background-color: #25282e;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 .wallet-client {
@@ -19,15 +25,20 @@
   height: 200px;
 }
 
-.App button {
-  background-color: black;
-  border-radius: 60px;
-  border:0;
-  color:white;
+button, input[type="submit"] {
+  background-image: linear-gradient(to bottom right, #8dbbed, #ca93f4, #e8a8a7);
+  border-radius: 50px;
+  border: 0;
+  color: white;
   padding: 10px 30px;
+  font-size: 18px;
+  transition: 0.5s;
 }
-.App button:hover {
-  background-color: gray;
+
+button:hover, input[type="submit"]:hover {
   cursor: pointer;
-  
+
+  transform: scale(0.9);
+  transition-duration: 0.5s;
+  box-shadow: 0px 0px 10px 0px rgba(141, 187, 237, 0.75);
 }

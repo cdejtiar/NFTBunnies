@@ -1,0 +1,21 @@
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:3em;
+}
+
+.team h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.team h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-block-start: 0em;
+    margin:3em 0em 3em 0em;
+    font-weight: 400;
+}

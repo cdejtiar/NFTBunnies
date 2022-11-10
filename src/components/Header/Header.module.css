@@ -1,0 +1,28 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:1em 3em;
+    background-color: black;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+}
+
+nav li a{
+    text-decoration: none;
+    margin-right: 3em;
+    color:white;
+}
+
+nav li a:hover{
+    color:#9AE664;
+}
+
+.logo{
+    width: 15%;
+}
