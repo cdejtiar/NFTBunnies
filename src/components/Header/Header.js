@@ -8,9 +8,9 @@ const Header = ({ dataNav }) => {
     <div className={`${styles["header"]}`}>
       <img className={`${styles["logo"]}`} src={logo} alt="logoBunnies" />
       <nav>
-        {dataNav.map((item) => {
+        {dataNav.map((item, index) => {
           return (
-            <li>
+            <li key={index}>
               <a href={item.route}>{item.pageName}</a>
             </li>
           );

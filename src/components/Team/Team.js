@@ -26,13 +26,14 @@ const Team = () => {
         developed and designed exclusively by me. Feel free to let me know what
         you think about it.
       </h3>
-      {dataTeam.map((item) => {
+      {dataTeam.map((item, index) => {
         return (
           <CardTeam
             src={item.src}
             alt={item.alt}
             name={item.name}
             links={item.links}
+            key={index}
           />
         );
       })}

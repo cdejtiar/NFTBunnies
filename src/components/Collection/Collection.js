@@ -36,8 +36,8 @@ const Collection = () => {
     <div className={`${styles['collection']}`}>
       <h2>Collection</h2>
       <Marquee gradient={false} className={`${styles['marquee']}`}>
-        {previewNFTs.map((item) => {
-          return <Card src={item.src} alt={item.alt} />;
+        {previewNFTs.map((item, index) => {
+          return <Card key={index} src={item.src} alt={item.alt} />;
         })}
       </Marquee>
       <button>See more</button>

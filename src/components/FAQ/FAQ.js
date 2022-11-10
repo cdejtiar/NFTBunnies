@@ -8,12 +8,13 @@ const FAQ = ({ dataFAQ }) => {
       <h2>FAQ</h2>
       <h3>Frequently Asked Questions</h3>
 
-      {dataFAQ.map((item) => {
+      {dataFAQ.map((item, index) => {
         return (
           <Question
             number={item.qNumber}
             question={item.question}
             answer={item.answer}
+            key={index}
           />
         );
       })}
