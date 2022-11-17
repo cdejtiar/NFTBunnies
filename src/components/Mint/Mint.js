@@ -6,6 +6,10 @@ import {
   useBalance,
 } from "../../contexts/OnboardContext";
 import { factoryAddress, factoryAbi } from "../../services/onboard/contract";
+import Counter from "../Counter/Counter";
+import styles from "./Mint.module.css";
+import NFTHero from '../../assets/NFTHero.png';
+import WalletClient from '../WalletClient/WalletClient'
 
 const Mint = () => {
   const address = useAddress();
@@ -39,7 +43,7 @@ const Mint = () => {
           return false;
         });
 
-      const valueEth = web3.utils.fromWei(`${price}`, "ether");
+      const valueEth = web3.utils.fromWei(`${5}`, "ether"); //cambiar 5 por price
 
       setTokenPrice(valueEth);
     };
@@ -114,12 +118,21 @@ const Mint = () => {
     }
   };
   return (
-    <div className="wallet-client">
-      <p>Balance {userBalance} eth</p>
-      <p>Price {tokenPrice} eth</p>
-      <button disabled={!address ? true : false} onClick={handleMint}>
-        Mint
-      </button>
+    <div className={`${styles["mint"]}`} id="mint">
+      <div className={`${styles["data"]}`}>
+        <h2>I want somebunny to love</h2>
+        <h3>Mint you bunny</h3>
+        <img src={NFTHero} alt="A bunny" />
+      </div>
+      <div className={`wallet-client ${styles["minter"]}`}>
+      <WalletClient />
+        <p>Your Balance is {userBalance} eth</p>
+        <p>Price per bunny {tokenPrice} eth</p>
+        <Counter />
+        <button disabled={!address ? true : false} onClick={handleMint}>
+          Mint
+        </button>
+      </div>
     </div>
   );
 };

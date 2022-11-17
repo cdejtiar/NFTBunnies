@@ -1,0 +1,33 @@
+.counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0em;
+}
+
+.counter p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-size: 2em;
+}
+
+.plusminus {
+  font-size: 0;
+  font-weight: bolder;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 1em;
+  width: 50px;
+  height: 50px;
+
+  background-image: linear-gradient(to bottom right, #8dbbed, #ca93f4, #e8a8a7);
+  border-radius: 50px;
+  border: 0;
+}
+
+.plusminus:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgba(141, 187, 237, 0.75);
+}

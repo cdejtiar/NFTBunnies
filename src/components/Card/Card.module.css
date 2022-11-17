@@ -1,14 +1,6 @@
-.card{
-    background-image: linear-gradient(to bottom right, #EAA142, #B1B069, #9AE664);
-    padding: 2em;
-    border-radius: 50px;
-    margin: 1em;
-    width:300px
-}
-
 .card img{
-    width:100%;
-    border-radius: 25px;
+    width:300px;
+    margin: .5em;
 }
 
 .card h3{

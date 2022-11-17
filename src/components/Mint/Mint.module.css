@@ -1,7 +1,47 @@
-.mint{
-    background-image: linear-gradient(to bottom right, #8dbbed, #ca93f4, #e8a8a7);
-    height: 50vh;
-    display: flex;
-    justify-content: center;
+.mint {
+  background-image: linear-gradient(to bottom right, #8dbbed, #ca93f4, #e8a8a7);
+  padding: 6em;
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.data {
+  text-align: center;
+  font-family: "Boogaloo", cursive;
+  text-transform: uppercase;
+  font-size: 1.7em;
+  width: 50%;
+  display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.data h2 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.data h3 {
+  background-color: black;
+}
+
+.data img {
+  width: 80%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgba(141, 187, 237, 0.75);
+  margin-top:.5em;
+}
+
+.minter {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 40%;
+  margin-left: 3em;
+}
+
+.minter p {
+  text-align: end;
 }

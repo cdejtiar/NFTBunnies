@@ -11,7 +11,7 @@ import Footer from "../components/Footer/Footer";
 
 const dataNav = [
   { pageName: "Home", route: "." },
-  { pageName: "Collection", route: "#collection" },
+  { pageName: "Mint", route: "#collection" },
   { pageName: "Team", route: "#team" },
   { pageName: "FAQ", route: "#FAQ" },
 ];
@@ -33,7 +33,7 @@ const dataFAQ = [
     question: "Who's on the team?",
     show: 'false',
     answer:
-      "Hi, my name is Camila! I am a student of Multimedia Technology and I've developed and designed this project from scratch. Feel free to give me your feedback",
+      "Hi, my name is Camila! I am a student of Multimedia Technology and I've developed and designed this project from scratch. Feel free to give me your feedback.",
   },
   {
     question: 'What is "Minting a NFT"?',

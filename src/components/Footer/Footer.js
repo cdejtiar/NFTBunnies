@@ -8,7 +8,7 @@ const Footer = () => {
     <div className={`${styles["footer"]}`}>
       <div className={`${styles["bunnies"]}`}>
         <img className={`${styles["logo"]}`} src={logo} alt="logoBunnies" />
-        <h3>Bunnies is a collection of 1000 NFTs</h3>
+        <h3>Bunnies is a collection of 50 NFTs</h3>
         <p>© 2022 Dejtiar Camila</p>
       </div>
 
