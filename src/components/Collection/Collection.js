@@ -33,7 +33,7 @@ const previewNFTs = [
 
 const Collection = () => {
   return (
-    <div className={`${styles['collection']}`}>
+    <div className={`${styles['collection']}`} id="collection">
       <h2>Collection</h2>
       <Marquee gradient={false} className={`${styles['marquee']}`}>
         {previewNFTs.map((item, index) => {

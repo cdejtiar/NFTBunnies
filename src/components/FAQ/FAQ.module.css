@@ -21,3 +21,16 @@
   margin-block-start: 0em;
   font-weight: 400;
 }
+
+.faq button{
+  width:1330px !important;
+}
+
+.faq button:hover{
+  transform: scale(1);
+}
+
+.faq div{
+  padding: 0.5em !important;
+  font-style: italic;
+}

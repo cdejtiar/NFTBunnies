@@ -25,7 +25,7 @@
   height: 200px;
 }
 
-button, input[type="submit"] {
+button, input[type="submit"]{
   background-image: linear-gradient(to bottom right, #8dbbed, #ca93f4, #e8a8a7);
   border-radius: 50px;
   border: 0;
@@ -33,6 +33,7 @@ button, input[type="submit"] {
   padding: 10px 30px;
   font-size: 18px;
   transition: 0.5s;
+  font-weight: bolder;
 }
 
 button:hover, input[type="submit"]:hover {

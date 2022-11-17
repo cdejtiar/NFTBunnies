@@ -18,7 +18,7 @@ const dataTeam = [
 
 const Team = () => {
   return (
-    <div className={`${styles['team']}`}>
+    <div className={`${styles['team']}`} id="team">
       <h2>Team</h2>
       <h3>
         I am a student of Multimedia Technology at Universidad Maimónides. This
