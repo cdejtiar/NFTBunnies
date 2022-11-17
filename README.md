@@ -1,6 +1,10 @@
 
 # WTD OnboardJs Context Boilerplate
 
+## Useful links
+- Etherscan Contract: https://goerli.etherscan.io/address/0x8e6c8bc83729a4652142B8693788b0f6A715D821
+- OpenSea: https://testnets.opensea.io/es/assets/goerli/0x8e6c8bc83729a4652142b8693788b0f6a715d821/2
+
 ## To do...
 - Convert from wei to eth using web3.eth.utils
 - Add minting component

@@ -43,7 +43,7 @@ const Mint = () => {
           return false;
         });
 
-      const valueEth = web3.utils.fromWei(`${5}`, "ether"); //cambiar 5 por price
+      const valueEth = web3.utils.fromWei(`${price || 0}`, "ether"); //cambiar 5 por price
 
       setTokenPrice(valueEth);
     };
@@ -118,12 +118,14 @@ const Mint = () => {
     }
   };
   return (
+    <>
     <div className={`${styles["mint"]}`} id="mint">
       <div className={`${styles["data"]}`}>
         <h2>I want somebunny to love</h2>
         <h3>Mint you bunny</h3>
         <img src={NFTHero} alt="A bunny" />
       </div>
+      {address && (
       <div className={`wallet-client ${styles["minter"]}`}>
       <WalletClient />
         <p>Your Balance is {userBalance} eth</p>
@@ -133,7 +135,14 @@ const Mint = () => {
           Mint
         </button>
       </div>
+    )}
+    {!address && (
+      <div className={`wallet-client ${styles["minter"]}`}>
+      <WalletClient />
+      </div>
+    )}
     </div>
+    </>
   );
 };
 
